@@ -2,6 +2,9 @@
 vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,org.codeaurora.snapcam
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# Graphics
+vendor.display.disable_rotator_downscale=1
+
 # Telephony
 ro.telephony.default_network=22,22
 persist.dbg.volte_avail_ovr=1
