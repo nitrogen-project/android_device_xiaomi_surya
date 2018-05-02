@@ -22,3 +22,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable inband ringing
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.disableinbandringing=false
+
+# b/73168288
+PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.display.disable_rotator_downscale=1
