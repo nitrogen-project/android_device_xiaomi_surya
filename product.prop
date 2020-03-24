@@ -18,6 +18,7 @@ persist.bluetooth.disableinbandringing=false
 ro.config.low_ram=false
 
 # Surfaceflinger
+debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=10500000
