@@ -22,3 +22,6 @@ on property:vendor.post_boot.parsed=1
     # Kill core_ctl
     write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
     write /sys/devices/system/cpu/cpu0/core_ctl/disable 1
+
+    # Disable sched_walt_rotate_big_tasks
+    write /proc/sys/kernel/sched_walt_rotate_big_tasks 0
