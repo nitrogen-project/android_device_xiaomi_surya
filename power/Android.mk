@@ -32,7 +32,8 @@ LOCAL_SRC_FILES := \
     hint-data.c \
     powerhintparser.c \
     main.cpp \
-    Power.cpp
+    Power.cpp \
+    power-6150.c
 
 LOCAL_C_INCLUDES := \
    external/libxml2/include \
