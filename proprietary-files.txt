@@ -4,10 +4,6 @@
 product/lib/com.qualcomm.qti.ant@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
 
-# Camera service
-bin/cameraserver
-lib/libcameraservice.so
-
 # DPM
 framework/tcmclient.jar
 product/bin/dpmd
