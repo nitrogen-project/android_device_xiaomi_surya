@@ -21,3 +21,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Disable smart fps switching
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.smart_dfps.enable=false
