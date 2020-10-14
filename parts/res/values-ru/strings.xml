@@ -58,6 +58,10 @@
     <string name="proximity_wake_enable_title">Включение по датчикам</string>
     <string name="proximity_wake_enable_summary">Проведите ладонью над экраном, чтобы вывести устройство из режима сна</string>
 
+    <!-- Wake on gesture -->
+    <string name="wake_on_gesture_title">Пробуждение жестами</string>
+    <string name="wake_on_gesture_summary">Пробуждение устройства вместо отображения уведомлений при использовании жестов</string>
+
     <!-- Dialog texts -->
     <string name="dialog_ok">OK</string>
 
