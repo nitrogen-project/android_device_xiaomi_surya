@@ -1,5 +1,6 @@
 # Camera
 vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,org.codeaurora.snapcam
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Telephony
 ro.telephony.default_network=22,22
