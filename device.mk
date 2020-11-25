@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Vendor overlay
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vendor-overlay/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/libnfc-nci.conf
+
 # WiFi
 PRODUCT_PACKAGES += \
     WifiOverlay
