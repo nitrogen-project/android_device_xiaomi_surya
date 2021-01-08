@@ -120,7 +120,7 @@ void vendor_load_properties() {
         property_override(prop_name.c_str(), value.c_str(), false);
     };
 
-    char const fp[] = "google/sunfish/sunfish:11/RQ1A.201205.008/6943376:user/release-keys";
+    char const fp[] = "google/sunfish/sunfish:11/RQ1A.210105.002/6985033:user/release-keys";
 
     for (const auto &source : ro_props_default_source_order) {
         set_ro_build_prop(source, "fingerprint", fp);
