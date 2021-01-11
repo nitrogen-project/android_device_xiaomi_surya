@@ -1,0 +1,17 @@
+# Camera
+vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,org.codeaurora.snapcam
+
+# Telephony
+ro.telephony.default_network=22,22
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# Disable smart fps switching
+ro.vendor.smart_dfps.enable=false
+
+# Enable inband ringing
+persist.bluetooth.disableinbandringing=false
+
+# Set lmkd options
+ro.config.low_ram=false
