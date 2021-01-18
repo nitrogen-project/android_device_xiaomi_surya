@@ -93,7 +93,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             break;
         case Mode::INTERACTIVE:
             setInteractive(enabled);
-            power_hint(POWER_HINT_INTERACTION, NULL);
             break;
         case Mode::SUSTAINED_PERFORMANCE:
         case Mode::FIXED_PERFORMANCE:
@@ -127,12 +126,27 @@ ndk::ScopedAStatus Power::isModeSupported(Mode type, bool* _aidl_return) {
 ndk::ScopedAStatus Power::setBoost(Boost type, int32_t durationMs) {
     LOG(INFO) << "Power setBoost: " << static_cast<int32_t>(type)
                  << ", duration: " << durationMs;
+    switch (type) {
+        case Boost::INTERACTION:
+            power_hint(POWER_HINT_INTERACTION, &durationMs);
+            break;
+        default:
+            LOG(INFO) << "Boost " << static_cast<int32_t>(type) << "Not Supported";
+            break;
+    }
     return ndk::ScopedAStatus::ok();
 }
 
 ndk::ScopedAStatus Power::isBoostSupported(Boost type, bool* _aidl_return) {
     LOG(INFO) << "Power isBoostSupported: " << static_cast<int32_t>(type);
-    *_aidl_return = false;
+    switch (type) {
+        case Boost::INTERACTION:
+            *_aidl_return = true;
+            break;
+        default:
+            *_aidl_return = false;
+            break;
+    }
     return ndk::ScopedAStatus::ok();
 }
 
