@@ -23,19 +23,6 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-function blob_fixup() {
-    case "${1}" in
-    product/lib/libdpmframework.so)
-        patchelf --replace-needed "libcutils.so" "libcutils-v29.so" "${2}"
-        patchelf --add-needed "libcutils.so" "${2}"
-        ;;
-    product/lib64/libdpmframework.so)
-        patchelf --replace-needed "libcutils.so" "libcutils-v29.so" "${2}"
-        patchelf --add-needed "libcutils.so" "${2}"
-        ;;
-    esac
-}
-
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
         -n | --no-cleanup )
