@@ -130,7 +130,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.surya
+    android.hardware.power-service.surya
 
 # Product init
 PRODUCT_COPY_FILES += \
