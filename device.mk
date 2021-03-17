@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.surya
+    android.hardware.lights-service.qti-surya
 
 # NFC
 PRODUCT_PACKAGES += \
