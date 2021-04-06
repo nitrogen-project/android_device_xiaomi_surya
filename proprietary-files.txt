@@ -117,8 +117,8 @@ system_ext/framework/qti-telephony-common.jar
 -app/SoterService/SoterService.apk
 
 # Soundfx - from LA.UM.8.9.r1-08300-SM6xx.0
-vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib/soundfx/libvolumelistener.so|672ad577dab5221bdd7f840d87313e3483aebde0
-vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so|c25cc5e8c3622eb97d3bb4814aeb301c01d8b046
+vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib/soundfx/libvolumelistener.so|e6c1f1bfb7bd5cfb36131aaff0d4e8c74833865d
+vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so|1b16cd00fd2144e860f99c0869c2db1489c789a2
 
 # WiFi Display
 -framework/WfdCommon.jar
