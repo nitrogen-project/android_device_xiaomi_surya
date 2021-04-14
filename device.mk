@@ -158,7 +158,6 @@ PRODUCT_BOOT_JARS += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlay \
     WifiOverlay
 
 PRODUCT_SOONG_NAMESPACES += \
