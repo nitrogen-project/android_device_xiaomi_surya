@@ -39,4 +39,4 @@ debug.sf.earlyGl.app.duration=21000000
 
 # Set system properties identifying the chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM7150
+ro.soc.model=SM7150
