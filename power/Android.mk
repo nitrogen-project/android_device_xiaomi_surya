@@ -20,7 +20,7 @@ LOCAL_SHARED_LIBRARIES := \
     libutils
 
 LOCAL_STATIC_LIBRARIES := \
-    android.hardware.power-V1-ndk_platform
+    android.hardware.power-V1-ndk
 
 LOCAL_HEADER_LIBRARIES += \
     libutils_headers \

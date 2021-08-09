@@ -15,7 +15,7 @@ LOCAL_SHARED_LIBRARIES := \
     libbinder_ndk
 
 LOCAL_STATIC_LIBRARIES := \
-    android.hardware.vibrator-V1-ndk_platform
+    android.hardware.vibrator-V1-ndk
 
 LOCAL_HEADER_LIBRARIES += \
     libutils_headers \
@@ -55,7 +55,7 @@ LOCAL_SHARED_LIBRARIES := \
     vendor.qti.hardware.vibrator.impl.xiaomi_surya
 
 LOCAL_STATIC_LIBRARIES := \
-    android.hardware.vibrator-V1-ndk_platform
+    android.hardware.vibrator-V1-ndk
 
 LOCAL_HEADER_LIBRARIES += \
     libutils_headers \
