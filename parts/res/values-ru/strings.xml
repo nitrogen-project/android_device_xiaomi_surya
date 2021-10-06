@@ -24,6 +24,7 @@
     <string name="switch_bar_off">Выключено</string>
 
     <!-- Ambient Display -->
+    <string name="ambient_enable">Использовать Ambient Display</string>
     <string name="ambient_display_title">Индикация событий</string>
     <string name="ambient_display_enable_title">Индикация событий</string>
     <string name="ambient_display_enable_summary">Включать экран при получении уведомлений</string>
@@ -105,6 +106,7 @@
     <string name="dirac_headset_earphone">Mi Earphones</string>
 
     <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_enable">Включить улучшение звука Mi</string>
     <string name="dirac_preset_default">По умолчанию</string>
     <string name="dirac_preset_rock">Рок</string>
     <string name="dirac_preset_jazz">Джаз</string>
