@@ -12,6 +12,8 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Use ambient display</string>
 
     <!-- Device specific settings -->
     <string name="device_settings_app_name">Advanced settings</string>
@@ -74,6 +76,7 @@
     <string name="msg_device_need_restart">Please restart device for this to take effect.</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">Enable Mi Sound Enhancer</string>
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_headset_title">Choose headphones type</string>
     <string name="dirac_preset_title">Choose a preset</string>

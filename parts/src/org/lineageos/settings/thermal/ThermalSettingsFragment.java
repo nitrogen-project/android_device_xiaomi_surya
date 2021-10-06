@@ -85,8 +85,7 @@ public class ThermalSettingsFragment extends PreferenceFragment
 
         mThermalUtils = new ThermalUtils(getActivity());
 
-        final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        getActivity().setTitle(getResources().getString(R.string.thermal_title));
     }
 
     @Override
