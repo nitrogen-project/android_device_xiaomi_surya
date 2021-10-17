@@ -17,8 +17,10 @@ LOCAL_SHARED_LIBRARIES := \
     libxml2 \
     libbase \
     libbinder_ndk \
-    libutils \
-    android.hardware.power-ndk_platform
+    libutils
+
+LOCAL_STATIC_LIBRARIES := \
+    android.hardware.power-V1-ndk_platform
 
 LOCAL_HEADER_LIBRARIES += \
     libutils_headers \
