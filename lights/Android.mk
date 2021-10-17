@@ -14,7 +14,9 @@ LOCAL_SHARED_LIBRARIES := \
         libbase \
         liblog \
         libhardware \
-        libbinder_ndk \
-        android.hardware.light-ndk_platform
+        libbinder_ndk
+
+LOCAL_STATIC_LIBRARIES := \
+        android.hardware.light-V1-ndk_platform
 
 include $(BUILD_EXECUTABLE)
