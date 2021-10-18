@@ -31,6 +31,6 @@ public class EarlyStartReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         // Set FPS to 120hz on lock screen so that screen isn't laggy until .BootCompletedReceiver kicks in
         // Note that we do not have data access at this time (direct boot)
-        RefreshRateUtils.setFPS(4);
+        RefreshRateUtils.setFPS(0);
     }
 }
