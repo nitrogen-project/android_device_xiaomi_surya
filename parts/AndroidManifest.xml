@@ -17,7 +17,6 @@
     <application
         android:allowBackup="true"
         android:label="@string/device_settings_app_name"
-        android:theme="@style/Theme.Main"
         android:persistent="true">
 
         <receiver android:name=".EarlyStartReceiver" android:directBootAware="true">
@@ -36,7 +35,8 @@
 
         <activity
             android:name=".DevicePreferenceActivity"
-            android:label="@string/device_specific_settings_title">
+            android:label="@string/device_specific_settings_title"
+            android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -47,7 +47,8 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title">
+            android:label="@string/ambient_display_title"
+            android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
