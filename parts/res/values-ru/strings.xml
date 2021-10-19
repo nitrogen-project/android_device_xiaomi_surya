@@ -12,6 +12,8 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Использовать Ambient Display</string>
 
     <!-- Device specific settings -->
     <string name="device_settings_app_name">Дополнительные настройки</string>
@@ -24,7 +26,6 @@
     <string name="switch_bar_off">Выключено</string>
 
     <!-- Ambient Display -->
-    <string name="ambient_enable">Использовать Ambient Display</string>
     <string name="ambient_display_title">Индикация событий</string>
     <string name="ambient_display_enable_title">Индикация событий</string>
     <string name="ambient_display_enable_summary">Включать экран при получении уведомлений</string>
@@ -59,6 +60,10 @@
     <string name="proximity_wake_enable_title">Включение по датчикам</string>
     <string name="proximity_wake_enable_summary">Проведите ладонью над экраном, чтобы вывести устройство из режима сна</string>
 
+    <!-- Wake on gesture -->
+    <string name="wake_on_gesture_title">Пробуждение жестами</string>
+    <string name="wake_on_gesture_summary">Пробуждение устройства вместо отображения уведомлений при использовании жестов</string>
+
     <!-- Dialog texts -->
     <string name="dialog_ok">OK</string>
 
@@ -73,6 +78,7 @@
     <string name="msg_device_need_restart">Изменения применятся после перезагрузки.</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">Включить улучшение звука Mi</string>
     <string name="dirac_title">Улучшение звука Mi</string>
     <string name="dirac_headset_title">Тип наушников</string>
     <string name="dirac_hifi_enable_title">Включить Hi-fi</string>
@@ -106,7 +112,6 @@
     <string name="dirac_headset_earphone">Mi Earphones</string>
 
     <!-- Dirac settings: Equalizer presets -->
-    <string name="dirac_enable">Включить улучшение звука Mi</string>
     <string name="dirac_preset_default">По умолчанию</string>
     <string name="dirac_preset_rock">Рок</string>
     <string name="dirac_preset_jazz">Джаз</string>

@@ -14,19 +14,22 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings;
+package org.lineageos.settings.dirac;
 
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.collapsingtoolbar.R;
 
-public class DevicePreferenceActivity extends CollapsingToolbarBaseActivity {
+public class DiracActivity extends CollapsingToolbarBaseActivity {
+
+    private static final String TAG_DIRAC = "dirac";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new DevicePreferenceFragment())
-                .commit();
+
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+                new DiracSettingsFragment(), TAG_DIRAC).commit();
     }
 }

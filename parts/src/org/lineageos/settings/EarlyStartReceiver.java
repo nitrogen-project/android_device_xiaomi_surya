@@ -16,17 +16,21 @@
 
 package org.lineageos.settings;
 
-import android.os.Bundle;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Parcel;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 
-import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.collapsingtoolbar.R;
+import org.lineageos.settings.utils.RefreshRateUtils;
 
-public class DevicePreferenceActivity extends CollapsingToolbarBaseActivity {
+public class EarlyStartReceiver extends BroadcastReceiver {
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new DevicePreferenceFragment())
-                .commit();
+    public void onReceive(final Context context, Intent intent) {
+        // Set FPS to 120hz on lock screen so that screen isn't laggy until .BootCompletedReceiver kicks in
+        // Note that we do not have data access at this time (direct boot)
+        RefreshRateUtils.setFPS(4);
     }
 }
