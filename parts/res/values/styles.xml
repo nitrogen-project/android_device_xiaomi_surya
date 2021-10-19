@@ -13,11 +13,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-     <style name="Theme.Main.SwitchBar" parent="@android:style/ThemeOverlay.Material.ActionBar"></style>
+    <style name="Theme.Main.SwitchBar.SwitchText" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
 
-    <style name="Theme.Main.SwitchBar.Switch">
-        <item name="android:trackTint">@color/switchbar_switch_track_tint</item>
-        <item name="android:thumbTint">@color/switchbar_switch_thumb_tint</item>
+    <style name="Theme.Main.SwitchBar.Switch" parent="@android:style/Widget.Material.CompoundButton.Switch">
+        <item name="android:switchMinWidth">52dp</item>
+        <item name="android:minHeight">@dimen/preferred_minimum_touch_target</item>
+        <item name="android:track">@drawable/switch_track</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
     </style>
 
     <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />

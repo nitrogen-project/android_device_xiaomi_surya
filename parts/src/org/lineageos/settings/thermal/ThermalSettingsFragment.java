@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.TypedValue;
@@ -67,6 +68,8 @@ public class ThermalSettingsFragment extends PreferenceFragment
 
     private TextView mTextView;
     private View mSwitchBar;
+    private Drawable mBackgroundOn;
+    private Drawable mBackgroundOff;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -112,11 +115,15 @@ public class ThermalSettingsFragment extends PreferenceFragment
             mUserListView.setOnItemClickListener(this);
         }
 
+        mBackgroundOn = getContext().getDrawable(R.drawable.settingslib_switch_bar_bg_on);
+        mBackgroundOff = getContext().getDrawable(R.drawable.settingslib_switch_bar_bg_off);
+
         mTextView = view.findViewById(R.id.switch_text);
         mTextView.setText(getString(serviceEnabled ?
                 R.string.switch_bar_on : R.string.switch_bar_off));
 
         mSwitchBar = view.findViewById(R.id.switch_bar);
+        mSwitchBar.setBackground(serviceEnabled ? mBackgroundOn : mBackgroundOff);
         Switch switchWidget = mSwitchBar.findViewById(android.R.id.switch_widget);
         switchWidget.setChecked(serviceEnabled);
         switchWidget.setOnCheckedChangeListener(this);
@@ -497,6 +504,7 @@ public class ThermalSettingsFragment extends PreferenceFragment
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
         mTextView.setText(getString(isChecked ? R.string.switch_bar_on : R.string.switch_bar_off));
+        mSwitchBar.setBackground(isChecked ? mBackgroundOn : mBackgroundOff);
         mSwitchBar.setActivated(isChecked);
 
         if (isChecked) {

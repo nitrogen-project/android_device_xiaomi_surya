@@ -12,7 +12,21 @@
 -->
 
 <resources>
-    <color name="switchbar_background_color">@*android:color/material_grey_600</color>
-    <color name="switchbar_switch_track_tint">#BFFFFFFF</color>
-    <color name="switchbar_switch_thumb_tint">@android:color/white</color>
+    <!-- Material next state on color-->
+    <color name="state_on_color">@android:color/system_accent1_100</color>
+
+    <!-- Material next state off color-->
+    <color name="state_off_color">@android:color/system_accent2_100</color>
+
+    <!-- Material next thumb disable color-->
+    <color name="thumb_disabled_color">@android:color/system_neutral2_100</color>
+
+    <!-- Material next thumb off color-->
+    <color name="thumb_off_color">@android:color/system_neutral2_300</color>
+
+    <!-- Material next track on color-->
+    <color name="track_on_color">@android:color/system_accent1_600</color>
+
+    <!-- Material next track off color-->
+    <color name="track_off_color">@color/switch_track_off</color>
 </resources>
