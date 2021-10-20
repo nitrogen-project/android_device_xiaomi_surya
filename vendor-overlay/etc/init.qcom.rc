@@ -30,3 +30,6 @@ on property:vendor.post_boot.parsed=1
 
     # Disable sched_walt_rotate_big_tasks
     write /proc/sys/kernel/sched_walt_rotate_big_tasks 0
+
+on charger && property:sys.usb.configfs=*
+    setprop sys.usb.configfs 0
