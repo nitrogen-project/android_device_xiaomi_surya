@@ -34,17 +34,26 @@
             </intent-filter>
         </receiver>
 
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/advanced_settings"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".DevicePreferenceActivity"
             android:label="@string/device_specific_settings_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
         </activity>
 
         <activity
@@ -52,11 +61,9 @@
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
         </activity>
 
         <service android:name=".doze.DozeService"
@@ -68,11 +75,9 @@
             android:label="@string/dirac_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.sound" />
         </activity>
 
         <activity
@@ -80,14 +85,9 @@
             android:label="@string/thermal_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.battery" />
-            <meta-data
-                android:name="com.android.settings.order"
-                android:value="1" />
         </activity>
 
         <activity
@@ -95,11 +95,9 @@
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.sound" />
         </activity>
 
         <service

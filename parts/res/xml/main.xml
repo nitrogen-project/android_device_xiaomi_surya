@@ -32,6 +32,14 @@
     </Preference>
 
     <Preference
+        android:key="device_clear_speaker"
+        android:title="@string/clear_speaker_title" >
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="org.lineageos.settings"
+             android:targetClass="org.lineageos.settings.speaker.ClearSpeakerActivity"/>
+    </Preference>
+
+    <Preference
         android:key="device_thermal"
         android:title="@string/thermal_title" >
         <intent android:action="android.intent.action.MAIN"
