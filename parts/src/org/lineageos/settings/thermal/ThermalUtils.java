@@ -155,7 +155,7 @@ public final class ThermalUtils {
 
             if (modes[0].contains(packageName + ",")) {
                 state = THERMAL_STATE_BENCHMARK;
-                RefreshRateUtils.setFPS(4); // 120 Hz
+                RefreshRateUtils.setFPS(0); // 120 Hz
             } else if (modes[1].contains(packageName + ",")) {
                 state = THERMAL_STATE_CAMERA;
             } else if (modes[2].contains(packageName + ",")) {
@@ -163,7 +163,7 @@ public final class ThermalUtils {
                 RefreshRateUtils.setFPS(2); // 60 Hz
             } else if (modes[3].contains(packageName + ",")) {
                 state = THERMAL_STATE_GAMING;
-                RefreshRateUtils.setFPS(3); // 90 Hz
+                RefreshRateUtils.setFPS(1); // 90 Hz
             }
         }
 
