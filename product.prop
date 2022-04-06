@@ -6,7 +6,6 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 dalvik.vm.dex2oat64.enabled=true
 
 # Graphics
-vendor.display.disable_rotator_downscale=1
 ro.surface_flinger.has_wide_color_display=false
 
 # Telephony
