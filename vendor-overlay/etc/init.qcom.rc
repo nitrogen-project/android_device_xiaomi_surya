@@ -1,3 +1,7 @@
+service vibratorfeature-hal-service /vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
+    override
+    disabled
+
 on property:ro.boot.hwc=*
     setprop vendor.boot.hwc ${ro.boot.hwc}
 

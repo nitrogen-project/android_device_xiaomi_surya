@@ -1,0 +1,4 @@
+service vendor.qti.vibrator.xiaomi_surya /vendor/bin/hw/vendor.qti.hardware.vibrator.service.xiaomi_surya
+    class hal
+    user system
+    group system input
