@@ -642,4 +642,12 @@
         <item>900</item> <!--item>sensorLocationY</item-->
         <item>115</item> <!--item>sensorRadius</item-->
     </array>
+
+    <!-- List supported color modes. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL -->
+        <item>1</item> <!-- vendor color mode boosted -->
+        <item>2</item> <!-- COLOR_MODE_SATURATED -->
+        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+    </integer-array>
 </resources>
